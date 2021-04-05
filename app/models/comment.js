@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const portfolioSchema = new mongoose.Schema({
+const commentSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true
@@ -18,4 +18,4 @@ const portfolioSchema = new mongoose.Schema({
   timestamps: true
 })
 
-module.exports = mongoose.model('Example', portfolioSchema)
+module.exports = mongoose.model('Comment', commentSchema)
